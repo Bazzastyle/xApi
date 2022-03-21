@@ -1,0 +1,22 @@
+{
+  "name": "bazzastyle/xapi",
+  "description": "This is a PHP wrapper for the unofficial Xbox API",
+  "type": "project",
+  "license": "AGPL-3.0-or-later",
+  "require": {
+    "ext-json": "*",
+    "ext-curl": "*",
+    "php": "^8"
+  },
+  "autoload": {
+    "psr-4": {
+      "xApi\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "bazzastyle",
+      "email": "bazzastyle@hotmail.it"
+    }
+  ]
+}
