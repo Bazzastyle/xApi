@@ -1,3 +1,7 @@
+[![Latest Stable Version](https://poser.pugx.org/bazzastyle/xapi/v/stable)](https://packagist.org/packages/bazzastyle/xapi)
+[![Total Downloads](https://poser.pugx.org/bazzastyle/xapi/downloads)](https://packagist.org/packages/bazzastyle/xapi)
+[![License](https://poser.pugx.org/bazzastyle/xapi/license)](https://packagist.org/packages/bazzastyle/xapi)
+
 # Description
 > This is a PHP wrapper for the unofficial [Xbox API](https://xapi.us/)
 
