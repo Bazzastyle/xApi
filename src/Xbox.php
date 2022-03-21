@@ -32,13 +32,13 @@
 			$headerStr = substr($resultCurl, 0, $headerSize);
 			$bodyStr = substr($resultCurl, $headerSize);
 			$headers = $this->headersToArray($headerStr);
-			$limit = ["Limit" => trim($headers['X-RateLimit-Limit']), "Remaining" => trim($headers['X-RateLimit-Remaining']), "Reset" => trim($headers['X-RateLimit-Reset'])];
+			$limits = ["Limit" => trim($headers['X-RateLimit-Limit']), "Remaining" => trim($headers['X-RateLimit-Remaining']), "Reset" => trim($headers['X-RateLimit-Reset'])];
 
 			# stamp in console rate limit request api
-			echo '<script>console.log(' . json_encode($limit, JSON_PRETTY_PRINT) . ');</script>';
+			echo '<script>console.log(' . json_encode($limits) . ');</script>';
 
-			if ($headers['X-RateLimit-Remaining'] === 0 || $limit) {
-				return $limit;
+			if ($headers['X-RateLimit-Remaining'] === 0 || $limit === true) {
+				return $limits;
 			}
 
 			if ($bodyStr === false) {

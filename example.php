@@ -8,5 +8,5 @@
 
 	$xbox = new Xbox("f787fbc2c7167053ebcc4ff572302131cb61691f", "en-EN");
 	
-	echo json_encode($xbox->profile());
+	echo json_encode($xbox->account_profile());
 	exit();
